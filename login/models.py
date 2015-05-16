@@ -13,13 +13,12 @@ class UserInfo(models.Model):
     Firstname = models.CharField(max_length=100)
     Lastname  = models.CharField(max_length=100)
     Enroll = models.IntegerField(default=0,validators=[MaxValueValidator(99999999),MinValueValidator(1)])
-    email = models.EmailField(max_length=75)
+    email = models.EmailField()
 
 class UserImages(models.Model):
     user = models.ForeignKey(User)
-    path = '/media/pics/'
-    Profilepic = models.FileField(upload_to=(path+'dp/'),max_length=100)
-    Coverpic = models.FileField(upload_to=(path+'cp/'),max_length=100)
+    Profilepic = models.FileField(upload_to=('dp/'),max_length=100)
+    Coverpic = models.FileField(upload_to=('cp/'),max_length=100)
 
 
 

@@ -11,3 +11,5 @@ First time login = edit profile page
            else = profile page
 
 Change password link on edit profile page (must open on different tab)
+
+media folder contains profile and cover pic for testuser

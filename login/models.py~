@@ -17,7 +17,7 @@ class UserInfo(models.Model):
 
 class UserImages(models.Model):
     user = models.ForeignKey(User)
-    path = '/media/pics/' + user + '/'
+    path = '/media/pics/'
     Profilepic = models.FileField(upload_to=(path+'dp/'),max_length=100)
     Coverpic = models.FileField(upload_to=(path+'cp/'),max_length=100)
 
