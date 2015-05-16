@@ -1,0 +1,13 @@
+Pages to be made - 
+Login
+Signup
+Edit Profile
+Profile Page
+Change Password
+
+Index Page - Login page with link for signup page (must open in same tab)
+
+First time login = edit profile page
+           else = profile page
+
+Change password link on edit profile page (must open on different tab)

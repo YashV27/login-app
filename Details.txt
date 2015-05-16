@@ -1,6 +1,0 @@
-Pages to be made - 
-Login
-Signup
-Edit Profile
-Profile Page
-Change Password
