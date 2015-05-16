@@ -14,3 +14,5 @@ class UserAdmin(admin.ModelAdmin):
     inlines=[Info,Images]
 
 admin.site.register(User,UserAdmin)
+
+search_fields = ['Username','Firstname','Lastname','Enroll','email']
