@@ -8,6 +8,8 @@ class User(models.Model):
     def __str__(self):
 	return self.Username
 
+	first_login = True 
+	
 class UserInfo(models.Model):
     user = models.ForeignKey(User)
     Firstname = models.CharField(max_length=100)
