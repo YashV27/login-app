@@ -8,7 +8,7 @@ class User(models.Model):
     def __str__(self):
 	return self.Username
 
-	first_login = True 
+    first_login = models.BooleanField(default=True)
 	
 class UserInfo(models.Model):
     user = models.ForeignKey(User)
