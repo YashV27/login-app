@@ -73,7 +73,7 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Kolkata'
 
-MEDIA_ROOT = './login/media/pics/'
+MEDIA_ROOT = './media/pics/'
 
 USE_I18N = True
 
