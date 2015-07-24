@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import User,UserInfo,UserImages
+from login.models import User,UserInfo,UserImages
 
 class Info(admin.StackedInline):
     model = UserInfo
@@ -11,7 +11,7 @@ class Images(admin.StackedInline):
     extra = 1
 
 class UserAdmin(admin.ModelAdmin):
-    inlines=[Info,Images]
+    inlines=[Info]
 
 admin.site.register(User,UserAdmin)
 

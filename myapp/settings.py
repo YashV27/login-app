@@ -37,8 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-	'login',
+    'django.contrib.staticfiles','login',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -73,7 +72,7 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Kolkata'
 
-MEDIA_ROOT = './media/pics/'
+MEDIA_ROOT = '/media/pics/'
 
 USE_I18N = True
 
