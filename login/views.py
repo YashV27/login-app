@@ -1,7 +1,14 @@
 from django.http import HttpResponse
 
+from login.models import User
+
 def index(request):
     return HttpResponse("Login")
+    user_list = User.objects.get()
+
+    username = ""
+    password = ""
+
 
 def signup(request):
     return HttpResponse("Signup")
